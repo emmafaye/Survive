@@ -25,6 +25,7 @@ A: Yes, there is a Google Spreadsheet consisting of assets completed or needed h
 
 Q: Where can I post ideas and thoughts for features?
 A: You can post them here in this Facebook Group or you may document then in our shared Google Doc here: http://bit.ly/survive_doc
+
 Q: Where can I post ideas for the storyline and for characters?
 A: You can post them here in this Facebook Group or you may document then in our shared Google Doc here: http://bit.ly/survive_story
 
