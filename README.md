@@ -20,7 +20,7 @@ Main Features of Survive:
 
 The list can on, so help us add to it!
 
-Q: What can I work on, is there a work page that shows what assets are currently needed?
+: Q: What can I work on, is there a work page that shows what assets are currently needed?
 A: Yes, there is a Google Spreadsheet consisting of assets completed or needed here: http://bit.ly/survive_worksheet
 
 Q: Where can I post ideas and thoughts for features?
