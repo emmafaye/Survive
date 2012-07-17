@@ -1,6 +1,6 @@
 Survive
 =======
-Survive is a realistic open-world Zombie FPS RPG. The key behind Survive is that it would be open to the community, much like how Minecraft is open to the community. 
+Survive is a realistic open-world Zombie FPS RPG. The key behind Survive is that it is open to the community, much like how Minecraft is open to the community. 
 
 The hope is that everyone will come together to help make this an awesome game. Whether you can contribute ideas, music, animation or modeling, you can help bring this game to life.
 
@@ -51,9 +51,7 @@ Q: Do you have a Kickstarter page?
 A: Not yet, it's something I'm definitely considering, but haven't done yet, as it'd take me some time to make a good proposal page for the Kickstarter community.
 
 Q: Is there an IRC or chatroom available for brainstorming?
-A: As of right now there is not, but we can use Facebook's Chat for this entire group, you can access this chat at the top right of this page by clicking a link called "Chat".
+A: Yes we do, it's available here: http://www.survivegame.com/irc-chat
 
 Our website is currently viewable at:
-http://www.survivegame.com
-
-As of right now it's incomplete and needs more work. So if something seems like it's not working or missing, that's just because it is.
+http://www.survivegame.com/
