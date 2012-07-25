@@ -1,0 +1,5 @@
+Begin Object Class=TerrainLayerSetup Name=TLS_Green_Grass
+   Materials(0)=(Material=TerrainMaterial'TMAT_Green_Grass')
+   Name="TLS_Green_Grass"
+   ObjectArchetype=TerrainLayerSetup'Engine.Default__TerrainLayerSetup'
+End Object

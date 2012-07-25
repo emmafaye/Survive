@@ -1,0 +1,5 @@
+Begin Object Class=TerrainLayerSetup Name=TLS_Red_Rock
+   Materials(0)=(Material=TerrainMaterial'TMAT_Red_Rock')
+   Name="TLS_Red_Rock"
+   ObjectArchetype=TerrainLayerSetup'Engine.Default__TerrainLayerSetup'
+End Object

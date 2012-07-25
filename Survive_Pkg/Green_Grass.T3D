@@ -1,0 +1,38 @@
+Begin Object Class=Material Name=Green_Grass
+   Begin Object Class=MaterialExpressionTextureSample Name=MaterialExpressionTextureSample_0
+      Texture=Texture2D'Grass_Green_texture_1'
+      MaterialExpressionEditorX=363
+      MaterialExpressionEditorY=-19
+      Material=Material'Green_Grass'
+      Name="MaterialExpressionTextureSample_0"
+      ObjectArchetype=MaterialExpressionTextureSample'Engine.Default__MaterialExpressionTextureSample'
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name=MaterialExpressionTextureSample_2
+      Texture=Texture2D'Grass_Green_bw_1'
+      MaterialExpressionEditorX=261
+      MaterialExpressionEditorY=91
+      Material=Material'Green_Grass'
+      Name="MaterialExpressionTextureSample_2"
+      ObjectArchetype=MaterialExpressionTextureSample'Engine.Default__MaterialExpressionTextureSample'
+   End Object
+   Begin Object Class=MaterialExpressionTextureSample Name=MaterialExpressionTextureSample_1
+      Texture=Texture2D'Grass_Green_normal_1'
+      MaterialExpressionEditorX=313
+      MaterialExpressionEditorY=223
+      Material=Material'Green_Grass'
+      Name="MaterialExpressionTextureSample_1"
+      ObjectArchetype=MaterialExpressionTextureSample'Engine.Default__MaterialExpressionTextureSample'
+   End Object
+   DiffuseColor=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_0',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   SpecularColor=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_2',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Normal=(Expression=MaterialExpressionTextureSample'MaterialExpressionTextureSample_1',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Expressions(0)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_0'
+   Expressions(1)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_1'
+   Expressions(2)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_2'
+   ReferencedTextureGuids(0)=(A=2015136714,B=1257978153,C=997600701,D=1178728786)
+   ReferencedTextureGuids(1)=(A=-1885075667,B=1241847527,C=-775754109,D=161222442)
+   ReferencedTextureGuids(2)=(A=1047115572,B=1125747076,C=864536746,D=626908680)
+   LightingGuid=(A=1336760060,B=1097610664,C=305382070,D=-171108174)
+   Name="Green_Grass"
+   ObjectArchetype=Material'Engine.Default__Material'
+End Object
