@@ -1,0 +1,31 @@
+[tfpGFxUI_PauseMenu]
+ResumeString="RESUME"
+ExitString="EXIT"
+
+[tfpWeap_LinkGun]
+ItemName="Link Gun"
+PickupMessage="Link Gun"
+
+[tfpWeap_ShockRifle]
+ItemName="Shock Rifle"
+PickupMessage="Shock Rifle"
+
+[tfpWeap_RocketLauncher]
+ItemName="Rocket Launcher"
+PickupMessage="Rocket Launcher"
+
+[tfpTeamGame]
+Description="Two teams duke it out in a quest for battlefield supremacy.  The team with the most total frags wins."
+GameName="Team DeathMatch"
+EndOfMatchRulesTemplateStr_Scoring=First team to frag `g times wins
+EndOfMatchRulesTemplateStr_Time=Team with most frags in `t mins. wins
+
+[tfpGame]
+Description="Free-for-all kill or be killed.  The player with the most frags wins."
+GameName=DeathMatch
+EndOfMatchRulesTemplateStr_Scoring=First to make `g frags wins
+EndOfMatchRulesTemplateStr_Time=most frags in `t mins. wins
+
+[tfpVehicleCTFGame]
+GameName="Vehicle CTF"
+Description="Traditional Capture The Flag with vehicles and Hoverboards instead of Translocators. The Flag may not be carried in any vehicle but the Hoverboard."
