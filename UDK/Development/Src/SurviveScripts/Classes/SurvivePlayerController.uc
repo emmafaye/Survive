@@ -9,7 +9,8 @@ simulated function PostBeginPlay() {
   super.PostBeginPlay();
 
   bNoCrosshair = true;
-  myHUD.bShowHUD = false;
+  if ( myHUD != none )
+    myHUD.bShowHUD = false;
 }
 
 
@@ -17,8 +18,9 @@ simulated event GetPlayerViewPoint(out vector out_Location, out Rotator out_Rota
 {
   super.GetPlayerViewPoint(out_Location, out_Rotation);
 
-  myHUD.bShowHUD = false;
-  
+  if ( myHUD != none )
+    myHUD.bShowHUD = false;
+
   // two ways to hide weapon:
 
   //if ( Pawn.Weapon != none )
