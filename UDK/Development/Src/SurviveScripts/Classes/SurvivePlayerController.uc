@@ -1,4 +1,6 @@
-class SurvivePlayerController extends UTPlayerController;
+class SurvivePlayerController extends tfpPlayerController;
+
+// bBehindView = true // for some reason this guy wanted a 3rd person camera
 
 defaultproperties
 {
@@ -30,4 +32,19 @@ simulated event GetPlayerViewPoint(out vector out_Location, out Rotator out_Rota
 }
 
 
+exec function ToggleFlashlight()
+{
+  //`log('TRYING TO TOGGLE FLASHLIGHT');
+  if ( SurvivePawn(Pawn) != none )
+    SurvivePawn(Pawn).ToggleFlashlight();
+}
 
+/*
+state Dead
+{
+  function EndState(name NextStateName)
+  {
+    SetBehindView(default.bBehindView);
+  }
+}
+*/
