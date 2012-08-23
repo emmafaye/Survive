@@ -3,6 +3,7 @@ Placeable;
 
 var Pawn P; // variable to hold the pawn we bump into
 var() int DamageAmount;   //how much brain to munch
+var SoundCue ZombieSound;
 
 simulated function PostBeginPlay()
 {
@@ -10,6 +11,8 @@ simulated function PostBeginPlay()
 
    //wake the physics up
    SetPhysics(PHYS_Falling);
+
+   PlaySound(ZombieSound);
 }
 
 //over-ride epics silly character stuff
@@ -72,4 +75,6 @@ defaultproperties
 	bDontPossess=false
 
 	DamageAmount=10
+	
+	ZombieSound=SoundCue'Survive_Pkg.ZombieSound0'
 }
