@@ -4,6 +4,7 @@ Placeable;
 var Pawn P; // variable to hold the pawn we bump into
 var() int DamageAmount;   //how much brain to munch
 var SoundCue ZombieSound;
+var ZombieSpawn spawnPoint;
 
 simulated function PostBeginPlay()
 {
@@ -57,6 +58,28 @@ simulated function EatSlow()
      }
 }
 
+
+function bool Died(Controller Killer, class<DamageType> DamageType, vector HitLocation) {
+  //`Log("The owner is ");
+  //`Log(spawnPoint);
+  if ( Health <= 0 ) {
+    //`Log("THE ZOMBIE DIED 2");
+    if ( spawnPoint != none )
+      spawnPoint.ZombieDied();
+    else
+      `Log("The spawn point is none");
+  }
+
+  return super.Died(Killer,DamageType,HitLocation);
+}
+
+
+/*
+event TakeDamage(int Damage, Controller InstigatedBy, vector HitLocation, vector Momentum, class<DamageType> DamageType, optional TraceHitInfo HitInfo, optional Actor DamageCauser) {
+  super.TakeDamage(Damage,InstigatedBy, HitLocation, Momentum, DamageType, HitInfo, DamageCauser);
+}
+*/
+
 defaultproperties
 {
 	Begin Object Name=WPawnSkeletalMeshComponent
@@ -75,6 +98,6 @@ defaultproperties
 	bDontPossess=false
 
 	DamageAmount=10
-	
+
 	ZombieSound=SoundCue'Survive_Pkg.ZombieSound0'
 }
