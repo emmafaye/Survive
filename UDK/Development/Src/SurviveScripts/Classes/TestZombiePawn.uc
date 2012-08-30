@@ -13,7 +13,7 @@ simulated function PostBeginPlay()
    //wake the physics up
    SetPhysics(PHYS_Falling);
 
-   PlaySound(ZombieSound);
+   //PlaySound(ZombieSound);
 }
 
 //over-ride epics silly character stuff
@@ -37,7 +37,7 @@ simulated event Bump( Actor Other, PrimitiveComponent OtherComp, Vector HitNorma
 	{
             if (TestZombiePawn(Other) != None)  //we hit another zombie
             {
-               Return; //dont do owt
+               Return;
             }
             else
             {

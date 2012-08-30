@@ -2,6 +2,7 @@ class ZombieSpawn extends Actor
 Placeable;
 
 var TestZombiePawn spawnedZombiePawn;
+var() int AIMode;
 
 defaultproperties
 {
@@ -25,7 +26,7 @@ function SpawnZombie() {
     // get the player's pawn
     playerCtrl = GetPlayerController();
     //CanSeeByPoints( Vector ViewLocation, Vector TestLocation, Rotator ViewRotation );
-    if ( playerCtrl != none && playerCtrl.CanSeeByPoints(playerCtrl.Pawn.Location, Location, playerCtrl.Pawn.Rotation) == false ) {
+    if ( true /*playerCtrl != none && playerCtrl.CanSeeByPoints(playerCtrl.Pawn.Location, Location, playerCtrl.Pawn.Rotation) == false*/ ) {
       //`Log("=====spawning zombie");
       offset.Z = 64.0;
       //`Log("TRYING TO SPAWN AT " @ Location);
@@ -34,7 +35,8 @@ function SpawnZombie() {
         spawnedZombiePawn.bDontPossess = false;
         spawnedZombiePawn.spawnPoint = self;
         spawnedZombiePawn.SpawnDefaultController();
-        //`Log("zombie pawn: " @ spawnedZombiePawn);
+        if ( TestZombieBot(spawnedZombiePawn.Controller) != none )
+          TestZombieBot(spawnedZombiePawn.Controller).AIMode = AIMode;
       }
     } // if ( spawn point is not visible to player )
   }
